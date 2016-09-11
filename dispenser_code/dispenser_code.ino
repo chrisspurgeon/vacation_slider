@@ -10,9 +10,11 @@
 Servo myservo;  // create servo object to control a servo
 
 int armExtended = 0;
-int armRetracted = 120;
+int armRetracted = 110;
 int servoDelay = 2000;
-unsigned long dropDelayMilliseconds = 4380000;
+int returnDelay = 600;
+//unsigned long dropDelayMilliseconds = 4380000;
+unsigned long dropDelayMilliseconds = 5000;
 unsigned long timeOfNextDrop = dropDelayMilliseconds;
 
 void setup() {
@@ -36,6 +38,6 @@ void dropBall() {
   myservo.write(armRetracted);
   delay(servoDelay);
   myservo.write(armExtended);
-  delay(servoDelay);
+  delay(returnDelay);
   myservo.detach();
 }

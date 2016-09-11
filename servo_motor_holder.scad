@@ -20,14 +20,14 @@ translate([160, -34, -62])
 rotate([-90, 180, 0])
 difference() {
     cube([56, 27, 29]);
-    translate([8, 3, 3])
-    cube([40, 21, 41]);
+    translate([6, 3, 3])
+    cube([45, 21, 41]);
     translate([4.75, 8.5, 10])
-    cylinder(d1=4, d2=4, h=25, $fn=24);
+    //cylinder(d1=4, d2=4, h=25, $fn=24);
     translate([4.75, 18.5, 10])
-    cylinder(d1=4, d2=4, h=25, $fn=24);
+    //cylinder(d1=4, d2=4, h=25, $fn=24);
     translate([51.25, 8.5, 10])
-    cylinder(d1=4, d2=4, h=25, $fn=24);
+    //cylinder(d1=4, d2=4, h=25, $fn=24);
     translate([51.25, 18.5, 10])
     cylinder(d1=4, d2=4, h=25, $fn=24);
     
@@ -35,3 +35,11 @@ difference() {
     translate([-1, 10.5, 5])
     cube([10, 6, 30]);
 }
+
+
+color("red")
+translate([105,-5.1,-20])
+cube([3,10,20]);
+color("red")
+translate([156,-5.1,-20])
+cube([3,10,20]);
